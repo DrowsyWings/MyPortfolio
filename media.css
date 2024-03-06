@@ -1,161 +1,171 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-}
+/* media.css */
 
-@media screen and (max-width: 1200px) {
-  #nav {
-    display: none;
-  }
-  #hamnav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
+/* Mobile portrait (small phones) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
   }
 
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section_pic {
-    width: 75px;
-    height: 75px;
-    margin: 0 auto 2rem;
-  }
-}
-
-/* Styles for screens larger than 768px (tablets and desktops) */
-@media (min-width: 768px) {
-  section {
-    margin: 0 10rem;
+  nav {
+    height: 12vh;
   }
 
-  .section-container {
-    gap: 4rem;
+  .ham-icon span {
+    height: 2px;
   }
 
-  #profile {
-    gap: 5rem;
-    height: 80vh;
+  .menulinks {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
   }
 
-  .section_pic {
-    height: 400px;
-    width: 400px;
+  .menulinks li {
+    padding: 0.5rem;
   }
 
-  .about-pic {
-    width: 400px;
-  }
-
-  .arrow {
-    right: -5rem;
-  }
-
-  .detail-container {
-    padding: 1.5rem;
-  }
-
-  .article-container {
-    gap: 2.5rem;
-  }
-
-  article {
-    width: 10rem;
-  }
-}
-
-/* Styles for screens smaller than 768px (tablets) */
-@media (max-width: 767px) {
-  section {
-    margin: 0 2rem;
-  }
-
-  .section-container {
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-  }
-
-  #profile {
-    flex-direction: column;
-    gap: 2rem;
-    height: auto;
-    padding-bottom: 2rem;
-  }
-
-  .section_pic {
-    height: 300px;
-    width: 300px;
-  }
-
-  .about-pic {
-    width: 300px;
-  }
-
-  .arrow {
-    display: none;
+  .menulinks.open {
+    max-height: 200px;
   }
 
   .detail-container {
     padding: 1rem;
   }
 
-  .article-container {
-    gap: 1.5rem;
+  .about-pic {
+    width: 300px;
   }
 
-  article {
-    width: 8rem;
+  .project-img {
+    width: 100%;
+  }
+
+  .icon {
+    height: 2rem;
+  }
+
+  .email-icon {
+    height: 2rem;
   }
 }
 
-/* Styles for screens smaller than 480px (mobile devices) */
-@media (max-width: 479px) {
-  section {
-    margin: 0 1rem;
+/* Mobile landscape (medium phones) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
   }
 
-  .section_pic {
-    height: 200px;
-    width: 200px;
+  nav {
+    height: 10vh;
+  }
+
+  .ham-icon span {
+    height: 2.5px;
+  }
+
+  .detail-container {
+    padding: 1.5rem;
   }
 
   .about-pic {
-    width: 200px;
+    width: 350px;
   }
 
-  .article-container {
-    flex-direction: column;
-    align-items: center;
+  .project-img {
+    width: 100%;
   }
 
-  article {
-    width: 6rem;
+  .icon {
+    height: 2.5rem;
   }
 
-  .nav-links {
-    display: none;
+  .email-icon {
+    height: 2.5rem;
+  }
+}
+
+/* Tablet portrait (small tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 18px;
   }
 
-  #hamnav {
-    display: block;
+  nav {
+    height: 8vh;
+  }
+
+  .ham-icon span {
+    height: 3px;
+  }
+
+  .detail-container {
+    padding: 2rem;
+  }
+
+  .about-pic {
+    width: 400px;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .icon {
+    height: 3rem;
+  }
+
+  .email-icon {
+    height: 3rem;
+  }
+}
+
+/* Tablet landscape (medium tablets) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  body {
+    font-size: 20px;
+  }
+
+  nav {
+    height: 8vh;
+  }
+
+  .ham-icon span {
+    height: 3px;
+  }
+
+  .detail-container {
+    padding: 2rem;
+  }
+
+  .about-pic {
+    width: 400px;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+
+  .icon {
+    height: 3rem;
+  }
+
+  .email-icon {
+    height: 3rem;
+  }
+}
+
+/* Desktop (large screens) */
+@media only screen and (min-width: 1281px) {
+  body {
+    font-size: 22px;
+  }
+
+  nav {
+    height: 8vh;
   }
 }
